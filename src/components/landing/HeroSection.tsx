@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 const HeroSection = () => {
     return (
-        <section className="px-10 pt-18 pl-0 grid gap-20">
+        <section className="px-10 pt-18 grid gap-20">
             <div className=" flex flex-col gap-5 m-auto">
-                <p className=" text-4xl text-baralee-orange uppercase font-light text-center">Baralee Camping</p>
-                <p className=" text-5xl text-black font-medium text-center">we provide you the best experience</p>
-                <p className=" text-2xl text-black font-light text-center max-w-3xl w-full mx-auto">You don’t have to worry about the result because all of these interiors are made by people
+                <p className=" text-3xl md:text-4xl text-baralee-orange uppercase font-light text-center">Baralee Camping</p>
+                <p className=" text-4xl md:text-5xl text-black font-medium text-center">we provide you the best experience</p>
+                <p className=" text-xl md:text-2xl text-black font-light text-center max-w-3xl w-full mx-auto">You don’t have to worry about the result because all of these interiors are made by people
                     who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
             </div>
             <div className="bg-[url(/road-line.svg)] bg-no-repeat bg-contain relative h-[115lvw] w-[90%] m-auto">
