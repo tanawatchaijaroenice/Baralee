@@ -1,4 +1,5 @@
 import Banner from "@/components/landing/Banner";
+import Footer from "@/components/landing/Footer";
 import { Gallery } from "@/components/landing/Gallery";
 import HeroSection from "@/components/landing/HeroSection";
 import JourneySection from "@/components/landing/JourneySection";
@@ -15,6 +16,7 @@ export default function Home() {
       <Gallery />
       <div className=" w-full h-26 bg-[url(/images/gallery-4.png)] bg-no-repeat bg-cover bg-center opacity-50"> </div>
       <ServicesSection />
+      <Footer />
     </main>
   );
 }
