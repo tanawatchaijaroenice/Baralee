@@ -5,7 +5,7 @@ export const useLenis = () => {
     useEffect(() => {
         const lenis = new Lenis()
 
-        const raf = (time) => {
+        const raf = (time: DOMHighResTimeStamp) => {
             lenis.raf(time)
             requestAnimationFrame(raf)
         }
