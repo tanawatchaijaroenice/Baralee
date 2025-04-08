@@ -12,12 +12,12 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
-import Autoplay from "embla-carousel-autoplay"
+// import Autoplay from "embla-carousel-autoplay"
 
 export function Gallery() {
-    const plugin = React.useRef<any>(
-        Autoplay({ delay: 2000, stopOnInteraction: true })
-    )
+    // const plugin = React.useRef<any>(
+    //     Autoplay({ delay: 2000, stopOnInteraction: true })
+    // )
 
     const Images = [
         'gallery-1.png',
@@ -40,7 +40,8 @@ export function Gallery() {
                     </iframe>
                 </div>
             </div>
-            <Carousel plugins={[plugin.current]} className="w-[77%] m-auto">
+            {/* plugins={[plugin.current]} */}
+            <Carousel className="w-[77%] m-auto">
                 <CarouselContent className="-ml-1">
                     {Images.map((item, index) => (
                         <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
