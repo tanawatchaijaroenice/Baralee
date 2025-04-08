@@ -2,7 +2,7 @@ import React from 'react'
 
 const JourneySection = () => {
     return (
-        <section className='relative md:h-[130lvh] bg-[url(/images/journey-bg.png)] bg-no-repeat bg-contain bg-bottom'>
+        <section className='relative md:h-[130lvh] bg-[url(/images/journey-bg.png)] bg-repeat-x bg-auto bg-bottom'>
             <div className="container mx-auto px-4 relative z-10 max-w-6xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 

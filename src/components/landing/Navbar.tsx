@@ -10,7 +10,7 @@ const Navbar = () => {
                     <Image src='/images/Baralee_logo_White2.svg' alt="Logo" width={150} height={150} className="cursor-pointer" />
                 </Link>
 
-                <span className="text-lg text-white">tel: 000000</span>
+                <span className="text-lg text-white">tel: (+66) 97 564 2435</span>
             </nav>
         </header>
     )

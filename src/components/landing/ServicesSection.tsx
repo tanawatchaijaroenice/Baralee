@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ServicesSection() {
     return (
         <section id="services" className="section-spacing bg-background">
-            <div className="p-20 pt-6">
+            <div className="p-24 md:px-54 pt-16">
                 <h2 className="heading-lg text-center mb-2 text-3xl md:text-6xl font-semibold">Our Services</h2>
                 <p className="text-muted-foreground text-center mx-auto mb-10 text-xl md:text-2xl">
                     Explore our carefully crafted packages and services designed to maximize your outdoor adventure experience.

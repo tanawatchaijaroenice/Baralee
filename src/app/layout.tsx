@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Afacad, Afacad_Flux } from "next/font/google";
-import "./globals.css";
+import "./globals.css"; 
 
 const afacad = Afacad({
   variable: "--font-afacad",
