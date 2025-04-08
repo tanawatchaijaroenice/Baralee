@@ -12,10 +12,10 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
-import Autoplay from "embla-carousel-autoplay"
+import Autoplay, { AutoplayType } from "embla-carousel-autoplay"
 
 export function Gallery() {
-    const plugin = React.useRef(
+    const plugin: React.RefObject<AutoplayType> = React.useRef(
         Autoplay({ delay: 2000, stopOnInteraction: true })
     )
 
