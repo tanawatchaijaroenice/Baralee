@@ -33,7 +33,7 @@ export function Gallery() {
             <div className="relative rounded-xl overflow-hidden mb-15 shadow-xl w-[77%] m-auto">
                 {/* This would typically be a video, but we'll use an image for now */}
                 <div className="aspect-video w-full bg-black">
-                    <iframe width="1252" height="704" src="https://www.youtube.com/embed/WwS-Ugvnl2I" title="Baralee บาร์กาแฟ"
+                    <iframe width={'100%'} height={'100%'} src="https://www.youtube.com/embed/WwS-Ugvnl2I" title="Baralee บาร์กาแฟ"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen>
