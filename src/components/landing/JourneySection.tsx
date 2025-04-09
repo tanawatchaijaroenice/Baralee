@@ -26,7 +26,12 @@ const JourneySection = () => {
                         <div className="relative w-[360px] h-[690px] rounded-3xl bg-zinc-800 p-3 shadow-xl border-8 border-zinc-700">
                             <div className="w-full h-full rounded-2xl overflow-hidden bg-black relative">
                                 {/* Phone Screen Content */}
-                                <video className='h-full' width="320" height="240" autoPlay controls preload="none">
+                                <iframe width={'100%'} height={'100%'}  src="https://www.youtube.com/embed/kFDypMwQYXs" title="Baralee camping"
+                                    allow="accelerometer; autoplay; 
+                                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen></iframe>
+                                {/* <video className='h-full' width="320" height="240" autoPlay controls preload="none">
                                     <source src="/video/baralee-video-01.mp4" type="video/mp4" />
                                     <track
                                         src="/video/baralee-video-01.mp4"
@@ -35,13 +40,13 @@ const JourneySection = () => {
                                         label="English"
                                     />
                                     Your browser does not support the video tag.
-                                </video>
+                                </video> */}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
- 
+
         </section>
     )
 }
