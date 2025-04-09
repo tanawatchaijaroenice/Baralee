@@ -12,10 +12,10 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
-import Autoplay from "embla-carousel-autoplay"
+// import Autoplay from "embla-carousel-autoplay"
 
 export function Gallery() {
-    const autoplay = Autoplay({ delay: 2000, stopOnInteraction: true })
+    // const autoplay = Autoplay({ delay: 2000, stopOnInteraction: true })
     const Images = [
         'gallery-1.png',
         'gallery-2.png',
@@ -38,7 +38,8 @@ export function Gallery() {
                 </div>
             </div>
             {/* plugins={[plugin.current]} */}
-            <Carousel plugins={[autoplay]} className="w-[77%] m-auto">
+            {/* plugins={[autoplay]} */}
+            <Carousel className="w-[77%] m-auto">
                 <CarouselContent className="-ml-1">
                     {Images.map((item, index) => (
                         <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
