@@ -25,7 +25,7 @@ export function Gallery() {
 
     return (
         <section className="pb-10">
-            <p className="text-[#e08c1f] font-medium uppercase tracking-wider text-5xl text-center py-10">BARALEE GALLERY</p>
+            <p className="text-[#e08c1f] font-medium uppercase tracking-wider text-3xl md:text-5xl text-center py-10">BARALEE GALLERY</p>
             {/* Feature Video/Image */}
             <div className="relative rounded-xl overflow-hidden mb-15 shadow-xl w-[77%] m-auto">
                 {/* This would typically be a video, but we'll use an image for now */}

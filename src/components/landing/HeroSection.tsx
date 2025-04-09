@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 const HeroSection = () => {
     return (
-        <section className="px-16 lg:px-30 pt-18 pb-14 lg:pb-0 grid gap-20">
+        <section className="px-8 lg:px-30 pt-10 lg:pt-18 pb-14 lg:pb-0 grid gap-20">
             <div className=" flex flex-col gap-5 m-auto">
-                <p className=" text-3xl md:text-4xl text-baralee-orange uppercase font-light text-center">Baralee Camping</p>
-                <p className=" text-4xl md:text-5xl text-black font-medium text-center">we provide you the best experience</p>
-                <p className=" text-xl md:text-2xl text-black font-light text-center max-w-3xl w-full mx-auto">You don’t have to worry about the result because all of these interiors are made by people
+                <p className=" text-2xl md:text-4xl text-baralee-orange uppercase font-medium text-center">Baralee Camping</p>
+                <p className=" text-3xl md:text-5xl text-black font-medium text-center">we provide you the best experience</p>
+                <p className=" text-lg md:text-2xl text-black font-light text-center max-w-3xl w-full mx-auto">You don’t have to worry about the result because all of these interiors are made by people
                     who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
             </div>
             <div className="bg-[url(/road-line-mobile.svg)] h-[200lvw] lg:bg-[url(/road-line.svg)] bg-no-repeat bg-contain relative lg:h-[115lvw] bg-bottom w-[90%] m-auto">
@@ -23,7 +23,7 @@ const HeroSection = () => {
                     <p className=" text-[1.5vw] font-light">“Where the WiFi is weak, but the connection is strong.”</p>
                 </div>
 
-                <Image src="/images/coffee.png" height={1200} width={1200} className="absolute w-[40vw] top-[100vw] -right-[8vh] lg:w-[28vw] lg:top-[49vw] lg:-right-[5vh]" alt="coffee" />
+                <Image src="/images/coffee.png" height={1200} width={1200} className="absolute w-[40vw] top-[100vw] -right-[5vh] lg:w-[28vw] lg:top-[49vw] lg:-right-[5vh]" alt="coffee" />
                 <div className="absolute top-[120vw] -left-[4vh] lg:top-[65vw] lg:left-[0vh] text-center">
                     <p className=" text-baralee-orange text-[2.5vw] font-medium">we provide you the best experience</p>
                     <p className=" text-[1.5vw] font-light">“Where the WiFi is weak, but the connection is strong.”</p>
