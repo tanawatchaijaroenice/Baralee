@@ -97,6 +97,10 @@ body {
   color: var(--baralee-orange)
 }
 
+.bg-barelee {
+  background: var(--background);
+}
+
 .dark {
   /* --background: oklch(0.145 0 0); */
   --foreground: oklch(0.985 0 0);
@@ -135,6 +139,7 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
