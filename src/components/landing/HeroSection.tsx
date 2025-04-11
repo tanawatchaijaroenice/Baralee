@@ -66,7 +66,7 @@ const HeroSection = () => {
                     who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
             </div>
             <div ref={containerSvg} className="relative">
-                <svg className='m-auto' width="952" height="2390" viewBox="0 0 952 2390" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='m-auto w-[80%] h-full' viewBox="0 0 952 2390" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path ref={pathRefs} d="M66.4996 2.5C66.4996 2.5 952 301 949.5 497C947 693 96.9996 790.5 21.4769 962C-54.0458 1133.5 941.453 1317 929.976 1506.5C918.5 1696 21.4769 1939 3.49964 2060.5C-14.4776 2182 528 2387 528 2387" stroke="black" stroke-width="5" />
                 </svg>
 
