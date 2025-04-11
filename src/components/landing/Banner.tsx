@@ -1,9 +1,7 @@
 import React, { useRef } from 'react'
-import gsap from 'gsap'
+import { gsap } from '@/lib/gsap';
 import { useGSAP } from '@gsap/react'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
-gsap.registerPlugin(ScrollTrigger)
 
 const Banner = () => {
 
@@ -22,20 +20,14 @@ const Banner = () => {
             }
         })
 
-        tl.to(textRef.current, {
-            y: -250
-        }, 'a')
-        tl.to(textDescriptionRef.current, {
-            y: -250
-        }, 'a')
+        tl.to(textRef.current, { y: -250 }, 'start')
+        tl.to(textDescriptionRef.current, { y: -250 }, 'start')
         tl.to(imageRef.current, {
             scale: 1.2,
             ease: 'none',
             transformOrigin: 'center center',
-        }, 'a')
-        tl.to(containerRef.current, {
-            y: 300
-        }, 'a')
+        }, 'start')
+        tl.to(containerRef.current, { y: 300 }, 'start')
     })
 
     return (
