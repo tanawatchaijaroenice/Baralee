@@ -67,9 +67,9 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col items-center md:items-start">
-                    <div className="mt-8 flex space-x-6">
+                        <div className="mt-8 flex space-x-6">
                             <p className="text-center md:text-left text-gray-600">
-                                Copyright © {new Date().getFullYear()}
+                                Copyright © {new Date().getFullYear()} {new Date().getMinutes()}
                             </p>
                         </div>
                     </div>
