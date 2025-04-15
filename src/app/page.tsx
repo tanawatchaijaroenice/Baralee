@@ -7,9 +7,27 @@ import JourneySection from "@/components/landing/JourneySection";
 import Navbar from "@/components/landing/Navbar";
 import ServicesSection from "@/components/landing/ServicesSection";
 import { useLenis } from "@/lib/useLenis";
+import { useEffect } from "react";
+import useStore from '@/lib/store'
 
 export default function Home() {
   useLenis();
+
+  const setIsDesktop = useStore((state) => state.setIsDesktop)
+
+  useEffect(() => {
+    const autoResize = () => {
+      if (typeof window !== 'undefined') {
+        const windowWidth = window.innerWidth
+        setIsDesktop(windowWidth >= 1024)
+      }
+    }
+
+    window.addEventListener('resize', autoResize)
+    autoResize() // ตรวจสอบขนาดหน้าจอทันทีเมื่อโหลด
+
+    return () => window.removeEventListener('resize', autoResize)
+  }, [setIsDesktop])
 
   return (
     <main className="min-h-screen">
@@ -18,7 +36,6 @@ export default function Home() {
       <HeroSection />
       <JourneySection />
       <Gallery />
-      <div className=" w-full h-26 bg-[url(/images/gallery-4.png)] bg-no-repeat bg-cover bg-center opacity-50"> </div>
       <ServicesSection />
       <Footer />
     </main>

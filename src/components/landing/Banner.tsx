@@ -15,7 +15,6 @@ const Banner = () => {
             scrollTrigger: {
                 trigger: containerRef.current,
                 start: '50% 50%',
-                markers: true,
                 scrub: true
             }
         })
