@@ -35,7 +35,7 @@ const HeroSection = () => {
 
         elements.current.forEach((el) => {
             gsap.set(el, {
-                y: desktopSize ? 200 : 150
+                y: desktopSize ? 200 : 80
             })
 
             const tl = gsap.timeline({

@@ -11,7 +11,7 @@ const JourneySection = () => {
     useGSAP(() => {
         elements.current.forEach((element) => {
             gsap.set(element, {
-                y: desktopSize ? 200 : 100
+                y: desktopSize ? 200 : 50
             })
 
             const tl = gsap.timeline({
