@@ -19,7 +19,6 @@ const JourneySection = () => {
                     trigger: element,
                     start: desktopSize ? '-10% 100%' : '-100% 100%',
                     scrub: true,
-                    markers: true,
                 }
             })
 
@@ -36,12 +35,11 @@ const JourneySection = () => {
                     {/* Left Content */}
                     <div ref={(el: HTMLDivElement) => { elements.current[0] = el }} className="flex flex-col space-y-3 lg:space-y-6 xl:max-w-lg">
                         <h5 className="text-[#e08c1f] font-medium uppercase tracking-wider text-2xl lg:text-3xl">BARALEE GALLERY</h5>
-
-                        <h1 className="text-4xl lg:text-5xl font-bold text-zinc-800">
+                        <h1 className="text-3xl md:text-5xl font-bold text-zinc-800">
                             We Provide You The Best Experience
                         </h1>
 
-                        <p className="text-zinc-700 text-2xl lg:text-3xl leading-relaxed">
+                        <p className="text-zinc-700 text-lg md:text-2xl leading-relaxed">
                             You don&apos;t have to worry about the result because all of these interiors are
                             made by people who are professionals in their fields with an elegant and
                             luxurious style and with premium quality materials
